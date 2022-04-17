@@ -1,0 +1,23 @@
+<button (click)="download()">Download List</button>
+<div id="htmlData">
+
+
+<table class="tg">
+    <thead>
+        <th>Tittle</th>
+        <th>Description</th>
+        <th>Ingredients</th>
+      <tr *ngFor="let item of data;">
+    
+        <td class="tg-0lax">{{item.title}}</td>
+        <td class="tg-0lax">{{item.description}}</td>
+        <td class="tg-0lax" >
+            <tr *ngFor="let item1 of item.ingredients;">{{item1}}</tr>
+        </td>
+        
+        
+        
+      </tr>
+    </thead>
+    </table>
+</div>
